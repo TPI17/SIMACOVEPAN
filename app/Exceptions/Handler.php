@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA\Exceptions;
+namespace SIMACOVEPAN\Exceptions;
 
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;

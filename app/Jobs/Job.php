@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA\Jobs;
+namespace SIMACOVEPAN\Jobs;
 
 use Illuminate\Bus\Queueable;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA\Http\Middleware;
+namespace SIMACOVEPAN\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

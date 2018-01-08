@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA;
+namespace SIMACOVEPAN;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,11 +10,11 @@ class venta extends Model
     protected $fillable = ['can_Ven','fecha_Ven', 'total_Ven','id_Cliente','estado_Ven'];
 
 	public function cliente(){
-	   return $this->belongsTo('SICOVIMA\cliente','id_Cliente');
+	   return $this->belongsTo('SIMACOVEPAN\cliente','id_Cliente');
 	}
 
 	public function detalleVenta(){
-		return $this->hasMany('SICOVIMA\detalleVenta','id_Venta');
+		return $this->hasMany('SIMACOVEPAN\detalleVenta','id_Venta');
 	}
 
 	public static function numeroDocumento($id_Venta){

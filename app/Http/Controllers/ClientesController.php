@@ -1,18 +1,18 @@
 <?php
 
-namespace SICOVIMA\Http\Controllers;
+namespace SIMACOVEPAN\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use SICOVIMA\Http\Requests;
-use SICOVIMA\Http\Controllers\Controller;
-use SICOVIMA\departamento;
-use SICOVIMA\municipio;
-use SICOVIMA\cliente;
-use SICOVIMA\clienteJuridico;
-use SICOVIMA\clienteNatural;
-use SICOVIMA\correoCliente;
-use SICOVIMA\telefonoCliente;
+use SIMACOVEPAN\Http\Requests;
+use SIMACOVEPAN\Http\Controllers\Controller;
+use SIMACOVEPAN\departamento;
+use SIMACOVEPAN\municipio;
+use SIMACOVEPAN\cliente;
+use SIMACOVEPAN\clienteJuridico;
+use SIMACOVEPAN\clienteNatural;
+use SIMACOVEPAN\correoCliente;
+use SIMACOVEPAN\telefonoCliente;
 
 class ClientesController extends Controller
 {

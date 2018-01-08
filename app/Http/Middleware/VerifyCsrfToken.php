@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA\Http\Middleware;
+namespace SIMACOVEPAN\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA;
+namespace SIMACOVEPAN;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,12 +11,12 @@ class proveedor extends Model
     protected $fillable = ['nombre_Prov','NIT_Prov', 'tipoMercaderia_Prov','direccion_Prov','estado_Prov','id_Municipio'];
 
 public function telefonoProveedor(){
-   return $this->hasMany('\SICOVIMA\telefonoProveedor','id_Proveedor');
+   return $this->hasMany('\SIMACOVEPAN\telefonoProveedor','id_Proveedor');
 }
 
 public function proveedor(){
 
-   return $this->belongsTo('\SICOVIMA\municipio','id_Municipio');
+   return $this->belongsTo('\SIMACOVEPAN\municipio','id_Municipio');
 }
 
  public function municipio(){

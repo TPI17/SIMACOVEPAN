@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA;
+namespace SIMACOVEPAN;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -17,7 +17,7 @@ class materiaPrima extends Model
 }
 
 public function materiaPrima(){
-return $this->haaMany('\SICOVIMA\materiaPrima','materiaPrima');
+return $this->haaMany('\SIMACOVEPAN\materiaPrima','materiaPrima');
 }
 
 }

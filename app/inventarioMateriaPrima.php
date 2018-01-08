@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA;
+namespace SIMACOVEPAN;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -19,7 +19,7 @@ return $this->hasMany('defectuosaMP');
 }
 
 public function materiaPrima(){
-return $this->belongsTo('\SICOVIMA\materiaPrima','id_MateriaPrima');
+return $this->belongsTo('\SIMACOVEPAN\materiaPrima','id_MateriaPrima');
 }
 
 }

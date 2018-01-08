@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    SICOVIMA\Http\Kernel::class
+    SIMACOVEPAN\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    SICOVIMA\Console\Kernel::class
+    SIMACOVEPAN\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    SICOVIMA\Exceptions\Handler::class
+    SIMACOVEPAN\Exceptions\Handler::class
 );
 
 /*

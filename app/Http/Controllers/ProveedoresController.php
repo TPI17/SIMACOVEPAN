@@ -1,15 +1,15 @@
 <?php
 
-namespace SICOVIMA\Http\Controllers;
+namespace SIMACOVEPAN\Http\Controllers;
 
 use Illuminate\Http\Request;
-use SICOVIMA\proveedor;
-use SICOVIMA\municipio;
-use SICOVIMA\departamento;
-use SICOVIMA\correoProveedor;
-use SICOVIMA\telefonoProveedor;
-use SICOVIMA\Http\Requests;
-use SICOVIMA\Http\Controllers\Controller;
+use SIMACOVEPAN\proveedor;
+use SIMACOVEPAN\municipio;
+use SIMACOVEPAN\departamento;
+use SIMACOVEPAN\correoProveedor;
+use SIMACOVEPAN\telefonoProveedor;
+use SIMACOVEPAN\Http\Requests;
+use SIMACOVEPAN\Http\Controllers\Controller;
 
 class ProveedoresController extends Controller
 {

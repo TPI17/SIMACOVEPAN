@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA;
+namespace SIMACOVEPAN;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,32 +11,32 @@ class cliente extends Model
     protected $fillable = ['nombre_Cli','tipo_Cli', 'estado_Cli','direccion_Cli','id_Municipio'];
 
     public function pedido(){
-   return $this->hasMany('\SICOVIMA\pedido','id');
+   return $this->hasMany('\SIMACOVEPAN\pedido','id');
 }
 
 public function cliente(){
 
-   return $this->belongsTo('\SICOVIMA\municipio','id_Municipio');
+   return $this->belongsTo('\SIMACOVEPAN\municipio','id_Municipio');
 }
 
 public function correoCliente(){
-return $this->hasMany('\SICOVIMA\correoCliente','id');
+return $this->hasMany('\SIMACOVEPAN\correoCliente','id');
 }
 
 public function municipio(){
-return $this->belongsTo('\SICOVIMA\municipio','id_Municipio');
+return $this->belongsTo('\SIMACOVEPAN\municipio','id_Municipio');
 }
 
 public function telefonoCliente(){
-return $this->hasMany('\SICOVIMA\telefonoCliente','id');
+return $this->hasMany('\SIMACOVEPAN\telefonoCliente','id');
 }
 
 public function clienteJuridico(){
-return $this->hasMany('\SICOVIMA\clienteJuridico','id');
+return $this->hasMany('\SIMACOVEPAN\clienteJuridico','id');
 }
 
 public function clienteNatural(){
-return $this->hasMany('\SICOVIMA\NaturalCliente','id');
+return $this->hasMany('\SIMACOVEPAN\NaturalCliente','id');
 }
 
 public function venta(){

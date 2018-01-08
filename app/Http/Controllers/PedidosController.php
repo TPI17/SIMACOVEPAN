@@ -1,18 +1,18 @@
 <?php
 
-namespace SICOVIMA\Http\Controllers;
+namespace SIMACOVEPAN\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Input;
-use SICOVIMA\producto;
-use SICOVIMA\pedido;
-use SICOVIMA\cliente;
-use SICOVIMA\detallePedido;
+use SIMACOVEPAN\producto;
+use SIMACOVEPAN\pedido;
+use SIMACOVEPAN\cliente;
+use SIMACOVEPAN\detallePedido;
 use Redirect;
-use SICOVIMA\Http\Requests\PedidosRequest;
+use SIMACOVEPAN\Http\Requests\PedidosRequest;
 
-use SICOVIMA\Http\Requests;
-use SICOVIMA\Http\Controllers\Controller;
+use SIMACOVEPAN\Http\Requests;
+use SIMACOVEPAN\Http\Controllers\Controller;
 
 class PedidosController extends Controller
 {
@@ -49,12 +49,12 @@ class PedidosController extends Controller
     public function Mostrar()
     {
       $pedido = pedido::with('cliente')->get();
-      $estadoPedido= \SICOVIMA\estadoPedido::all();
+      $estadoPedido= \SIMACOVEPAN\estadoPedido::all();
       $cliente = cliente::all();
-      $producto=\SICOVIMA\producto::all();
+      $producto=\SIMACOVEPAN\producto::all();
       $detallePedido=detallePedido::all();
 
-      $responsable = \SICOVIMA\clienteJuridico::all();
+      $responsable = \SIMACOVEPAN\clienteJuridico::all();
         return view("Proyecto.Desarrollo.Pedidos.MostrarListadePedidos")->with('pedido', $pedido)->with('estadoPedido', $estadoPedido);//
     }
 
@@ -75,10 +75,10 @@ class PedidosController extends Controller
 
       $pedido = pedido::with('cliente')->get();
       $cliente = cliente::all();
-      $producto=\SICOVIMA\producto::all();
+      $producto=\SIMACOVEPAN\producto::all();
       $detallePedido=detallePedido::with('pedido','producto')->get();
 
-      $responsable = \SICOVIMA\clienteJuridico::all();
+      $responsable = \SIMACOVEPAN\clienteJuridico::all();
 
         return view('Proyecto.Desarrollo.Pedidos.ListadePedidosSinIniciar')->with('pedido', $pedido)->with('producto', $producto)->with('detallePedido', $detallePedido)->with('cliente', $cliente)->with('pedido', $pedido);
       }
@@ -98,7 +98,7 @@ class PedidosController extends Controller
      public function index()
      {
 
-       $producto = \SICOVIMA\producto::orderBy('id','ASC')->paginate(5);
+       $producto = \SIMACOVEPAN\producto::orderBy('id','ASC')->paginate(5);
        return view('Proyecto.Desarrollo.pedidos.RegistrarPedidos')->with('producto', $producto);
      }
 
@@ -195,8 +195,8 @@ class PedidosController extends Controller
     public function show($id)
     {
       $detallePedido=detallePedido::find($id)->with('producto', 'pedido')->get();
-      $detalleProducto=\SICOVIMA\detalleProducto::find($id)->with('producto','inventarioMateriaPrima')->get();
-      $inventarioMateriaPrima=\SICOVIMA\inventarioMateriaPrima::find($id)->with('materiaPrima')->get();
+      $detalleProducto=\SIMACOVEPAN\detalleProducto::find($id)->with('producto','inventarioMateriaPrima')->get();
+      $inventarioMateriaPrima=\SIMACOVEPAN\inventarioMateriaPrima::find($id)->with('materiaPrima')->get();
 
         return view('Proyecto.Desarrollo.pedidos.IniciarPedido')->with('detallePedido', $detallePedido)->with('detalleProducto', $detalleProducto)->with('inventarioMateriaPrima', $inventarioMateriaPrima);
     }

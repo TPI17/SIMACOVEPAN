@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA\Providers;
+namespace SIMACOVEPAN\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'SICOVIMA\Events\SomeEvent' => [
-            'SICOVIMA\Listeners\EventListener',
+        'SIMACOVEPAN\Events\SomeEvent' => [
+            'SIMACOVEPAN\Listeners\EventListener',
         ],
     ];
 

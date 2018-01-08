@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA;
+namespace SIMACOVEPAN;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,6 +11,6 @@ class clienteNatural extends Model
 
 
 public function cliente(){
-   return $this->belongsTo('\SICOVIMA\cliente','id_Cliente');
+   return $this->belongsTo('\SIMACOVEPAN\cliente','id_Cliente');
 }
 }

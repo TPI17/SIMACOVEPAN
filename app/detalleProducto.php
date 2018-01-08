@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA;
+namespace SIMACOVEPAN;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,10 +10,10 @@ class detalleProducto extends Model
 
 
   public function producto(){
-   return $this->belongsTo('\SICOVIMA\producto','id_Producto');
+   return $this->belongsTo('\SIMACOVEPAN\producto','id_Producto');
   }
 
 public function inventarioMateriaPrima(){
-   return $this->belongsTo('\SICOVIMA\inventarioMateriaPrima','id_InventarioMP');
+   return $this->belongsTo('\SIMACOVEPAN\inventarioMateriaPrima','id_InventarioMP');
 }
 }

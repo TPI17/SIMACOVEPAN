@@ -1,16 +1,16 @@
 <?php
 
-namespace SICOVIMA\Http\Controllers;
+namespace SIMACOVEPAN\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Input;
-use SICOVIMA\proveedor;
-use SICOVIMA\materiaPrima;
-use SICOVIMA\compra;
-use SICOVIMA\detalleCompra;
+use SIMACOVEPAN\proveedor;
+use SIMACOVEPAN\materiaPrima;
+use SIMACOVEPAN\compra;
+use SIMACOVEPAN\detalleCompra;
 use Redirect;
-use SICOVIMA\Http\Requests;
-use SICOVIMA\Http\Controllers\Controller;
+use SIMACOVEPAN\Http\Requests;
+use SIMACOVEPAN\Http\Controllers\Controller;
 
 class CompraController extends Controller
 {
@@ -40,7 +40,7 @@ class CompraController extends Controller
     {
       $compra = compra::with('proveedor')->get();
 
-      $materiaPrima=\SICOVIMA\materiaPrima::all();
+      $materiaPrima=\SIMACOVEPAN\materiaPrima::all();
       $detalleCompra=detalleCompra::all();
 
       return view("Proyecto.Desarrollo.Compras.MostrarListadeCompras")->with('compra', $compra);//
@@ -49,7 +49,7 @@ class CompraController extends Controller
     public function Index()
     {
         $proveedores = proveedor::all();
-        $materiaPrimas = \SICOVIMA\materiaPrima::all();
+        $materiaPrimas = \SIMACOVEPAN\materiaPrima::all();
 
         return view('Proyecto.Desarrollo.Compras.RegistrarCompras',compact('proveedores','materiaPrimas'));
     }
@@ -79,7 +79,7 @@ class CompraController extends Controller
 
       $contador = count($request['cantidadc']);
 
-     $compra =  \SICOVIMA\compra::create([
+     $compra =  \SIMACOVEPAN\compra::create([
        'numFac_Com'=>$request['numFac_Com'],
        'fecha_Com'=>$request['fecha_Com'],
        'total_Com'=>$request['total_Com'],
@@ -87,21 +87,21 @@ class CompraController extends Controller
      ]);
 
        for ($j=0; $j < $contador ; $j++) {
-         \SICOVIMA\detalleCompra::create([
+         \SIMACOVEPAN\detalleCompra::create([
           'cant_DCom'=>$cantidad[$j],
           'subtotal_DCom'=>$subTotal[$j],
           'id_Compra'=>$compra -> id,
           'id_MateriaPrima'=>$id_MP[$j],
          ]);
 
-         $inventario = \SICOVIMA\inventarioMateriaPrima::where('id_MateriaPrima',$id_MP[$j])->get()->last();
+         $inventario = \SIMACOVEPAN\inventarioMateriaPrima::where('id_MateriaPrima',$id_MP[$j])->get()->last();
          if (count($inventario) > 0) {
           $existencias_IMP = $inventario -> nuevaExistencia_IMP;
          } else {
           $existencias_IMP = 0;
          }
 
-         \SICOVIMA\inventarioMateriaPrima::create([
+         \SIMACOVEPAN\inventarioMateriaPrima::create([
            'tipoMovimiento_IMP'=>1,
            'existencias_IMP'=>$existencias_IMP,
            'cantidad_IMP'=>$cantidad[$j],
@@ -112,7 +112,7 @@ class CompraController extends Controller
        }
 
        $proveedores = proveedor::all();
-       $materiaPrimas = \SICOVIMA\materiaPrima::all();
+       $materiaPrimas = \SIMACOVEPAN\materiaPrima::all();
 
        return view('Proyecto.Desarrollo.Compras.RegistrarCompras',compact('proveedores','materiaPrimas'));
        //return redirect("Proyecto.Desarrollo.Compras.RegistrarCompras")->with('mensaje','¡Guardado!');

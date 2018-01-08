@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model'  => SICOVIMA\User::class,
+        'model'  => SIMACOVEPAN\User::class,
         'key'    => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

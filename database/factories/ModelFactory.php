@@ -11,7 +11,7 @@
 |
 */
 
-$factory->define(SICOVIMA\User::class, function (Faker\Generator $faker) {
+$factory->define(SIMACOVEPAN\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->safeEmail,

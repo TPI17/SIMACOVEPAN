@@ -1,11 +1,11 @@
 <?php
 
-namespace SICOVIMA\Http\Controllers;
+namespace SIMACOVEPAN\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use SICOVIMA\Http\Requests;
-use SICOVIMA\Http\Controllers\Controller;
+use SIMACOVEPAN\Http\Requests;
+use SIMACOVEPAN\Http\Controllers\Controller;
 
 class SeguridadController extends Controller
 {

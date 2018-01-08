@@ -1,8 +1,8 @@
 <?php
 
-namespace SICOVIMA\Http\Controllers\Auth;
+namespace SIMACOVEPAN\Http\Controllers\Auth;
 
-use SICOVIMA\Http\Controllers\Controller;
+use SIMACOVEPAN\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class PasswordController extends Controller

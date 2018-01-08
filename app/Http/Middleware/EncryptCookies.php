@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA\Http\Middleware;
+namespace SIMACOVEPAN\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as BaseEncrypter;
 

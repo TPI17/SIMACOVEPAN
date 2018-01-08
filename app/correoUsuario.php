@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA;
+namespace SIMACOVEPAN;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,6 +10,6 @@ class correoUsuario extends Model
 
 
 public function usuario(){
-   return $this->belongsTo('\SICOVIMA\usuario','id_Usuario');
+   return $this->belongsTo('\SIMACOVEPAN\usuario','id_Usuario');
 }
 }

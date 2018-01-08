@@ -1,11 +1,11 @@
 <?php
 
-namespace SICOVIMA\Http\Controllers;
+namespace SIMACOVEPAN\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use SICOVIMA\Http\Requests;
-use SICOVIMA\Http\Controllers\Controller;
+use SIMACOVEPAN\Http\Requests;
+use SIMACOVEPAN\Http\Controllers\Controller;
 
 class MateriaPrimaController extends Controller
 {
@@ -59,7 +59,7 @@ class MateriaPrimaController extends Controller
         // $nombre=$request->nombre_MP;
 
         // if ( ) {
-            $materiaPrima = \SICOVIMA\materiaPrima::create([
+            $materiaPrima = \SIMACOVEPAN\materiaPrima::create([
             'nombre_MP'=>$request['nombre_MP'],
             'tipo_MP'=>$request['tipo_MP'],
             'color_MP'=>$request['color_MP'],

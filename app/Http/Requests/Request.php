@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA\Http\Requests;
+namespace SIMACOVEPAN\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

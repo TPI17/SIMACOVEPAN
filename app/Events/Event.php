@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA\Events;
+namespace SIMACOVEPAN\Events;
 
 abstract class Event
 {

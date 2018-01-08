@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA;
+namespace SIMACOVEPAN;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,6 +10,6 @@ class correoCliente extends Model
     protected $fillable = ['correo_CorreoCli','id_Cliente'];
 
 public function cliente(){
-   return $this->belongsTo('\SICOVIMA\cliente','id_Cliente');
+   return $this->belongsTo('\SIMACOVEPAN\cliente','id_Cliente');
 }
 }

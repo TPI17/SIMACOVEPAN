@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA;
+namespace SIMACOVEPAN;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,7 +12,7 @@ class compra extends Model
 
     public function proveedor(){
 
-       return $this->belongsTo('\SICOVIMA\proveedor','id_Proveedor');
+       return $this->belongsTo('\SIMACOVEPAN\proveedor','id_Proveedor');
     }
 
 }

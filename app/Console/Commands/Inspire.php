@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA\Console\Commands;
+namespace SIMACOVEPAN\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

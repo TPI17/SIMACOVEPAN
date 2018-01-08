@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA\Providers;
+namespace SIMACOVEPAN\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

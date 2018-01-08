@@ -140,10 +140,10 @@ return [
         /*
          * Application Service Providers...
          */
-        SICOVIMA\Providers\AppServiceProvider::class,
-        SICOVIMA\Providers\AuthServiceProvider::class,
-        SICOVIMA\Providers\EventServiceProvider::class,
-        SICOVIMA\Providers\RouteServiceProvider::class,
+        SIMACOVEPAN\Providers\AppServiceProvider::class,
+        SIMACOVEPAN\Providers\AuthServiceProvider::class,
+        SIMACOVEPAN\Providers\EventServiceProvider::class,
+        SIMACOVEPAN\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
 
     ],

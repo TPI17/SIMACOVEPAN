@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: SICOVIMA
-        psr4_prefix: SICOVIMA
+        namespace: SIMACOVEPAN
+        psr4_prefix: SIMACOVEPAN
         src_path: app

@@ -1,8 +1,8 @@
 <?php
 
-namespace SICOVIMA\Http\Requests;
+namespace SIMACOVEPAN\Http\Requests;
 
-use SICOVIMA\Http\Requests\Request;
+use SIMACOVEPAN\Http\Requests\Request;
 
 class PedidosRequest extends Request
 {

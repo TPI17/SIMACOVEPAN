@@ -1,20 +1,20 @@
 <?php
 
-namespace SICOVIMA\Http\Controllers;
+namespace SIMACOVEPAN\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use SICOVIMA\Http\Requests;
-use SICOVIMA\Http\Controllers\Controller;
-use SICOVIMA\cliente;
-use SICOVIMA\documento;
-use SICOVIMA\detalleVenta;
-use SICOVIMA\venta;
-use SICOVIMA\documentoVenta;
-use SICOVIMA\clienteJuridico;
-use SICOVIMA\producto;
-use SICOVIMA\inventarioProductoTerminado;
-use SICOVIMA\estadoDocumento;
+use SIMACOVEPAN\Http\Requests;
+use SIMACOVEPAN\Http\Controllers\Controller;
+use SIMACOVEPAN\cliente;
+use SIMACOVEPAN\documento;
+use SIMACOVEPAN\detalleVenta;
+use SIMACOVEPAN\venta;
+use SIMACOVEPAN\documentoVenta;
+use SIMACOVEPAN\clienteJuridico;
+use SIMACOVEPAN\producto;
+use SIMACOVEPAN\inventarioProductoTerminado;
+use SIMACOVEPAN\estadoDocumento;
 
 class VentasController extends Controller
 {

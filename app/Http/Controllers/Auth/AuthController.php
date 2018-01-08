@@ -1,10 +1,10 @@
 <?php
 
-namespace SICOVIMA\Http\Controllers\Auth;
+namespace SIMACOVEPAN\Http\Controllers\Auth;
 
-use SICOVIMA\User;
+use SIMACOVEPAN\User;
 use Validator;
-use SICOVIMA\Http\Controllers\Controller;
+use SIMACOVEPAN\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

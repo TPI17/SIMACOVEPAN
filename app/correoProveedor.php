@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA;
+namespace SIMACOVEPAN;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,6 +11,6 @@ class correoProveedor extends Model
     protected $fillable = ['correo_CorreoProv','id_Proveedor'];
 
 public function proveedor(){
-   return $this->belongsTo('\SICOVIMA\proveedor','id_Proveedor');
+   return $this->belongsTo('\SIMACOVEPAN\proveedor','id_Proveedor');
 }
 }

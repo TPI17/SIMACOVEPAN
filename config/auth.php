@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'model' => SICOVIMA\User::class,
+    'model' => SIMACOVEPAN\User::class,
 
     /*
     |--------------------------------------------------------------------------

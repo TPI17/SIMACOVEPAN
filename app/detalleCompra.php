@@ -1,6 +1,6 @@
 <?php
 
-namespace SICOVIMA;
+namespace SIMACOVEPAN;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,12 +12,12 @@ class detalleCompra extends Model
 
 
   public function compra(){
-    return $this->hasMany('\SICOVIMA\compra');
+    return $this->hasMany('\SIMACOVEPAN\compra');
    //return $this->belongsTo('compra');
   }
 
 public function materiaPrima(){
-   return $this->hasMany('\SICOVIMA\materiaPrima');
+   return $this->hasMany('\SIMACOVEPAN\materiaPrima');
    //return $this->belongsTo('materiaPrima');
 }
 
