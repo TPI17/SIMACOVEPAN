@@ -1,4 +1,4 @@
-<?php use SICOVIMA\departamento;
+<?php use SIMACOVEPAN\departamento;
  ?>
 @extends('layouts.MenuAdministrador')
 

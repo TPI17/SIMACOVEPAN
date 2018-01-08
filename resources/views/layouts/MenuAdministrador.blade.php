@@ -7,7 +7,7 @@
     {!! Html::script('bootstrap/js/bootstrap.min.js') !!}
     {!! Html::script('js/jquery.dataTables.min.js') !!}
     {!! Html::script('js/jquery.min.js') !!}
-  
+
 
         <script type="text/javascript">
         $(document).ready(function(){
@@ -67,7 +67,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SICOVIMA</title>
+    <title>SIMACOVEPAN</title>
 
     {!! Html::style('css/bootstrap.min.css') !!}
     {!! Html::style('font-awesome/css/font-awesome.css') !!}
@@ -80,7 +80,7 @@
     {!! Html::style('css/plugins/cropper/cropper.min.css') !!}
     {!! Html::style('css/plugins/switchery/switchery.css') !!}
     {!! Html::style('css/plugins/jasny/jasny-bootstrap.min.css') !!}
-    
+
     <!--
     {!! Html::style('css/plugins/nouslider/jquery.nouislider.css') !!}
     -->

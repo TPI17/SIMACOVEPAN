@@ -41,7 +41,7 @@
                   <tr>
                       <td align="left"><font size="4" >{{$cli-> nombre_Cli}}</font></td>
                       <?php
-                        $telefonosC = SICOVIMA\cliente::numeroTelefonoCliente($cli->id);
+                        $telefonosC = SIMACOVEPAN\cliente::numeroTelefonoCliente($cli->id);
                       ?>
                       <td align="rihgt"><font size="4" ><?php
                         foreach ($telefonosC as $telefonos) {

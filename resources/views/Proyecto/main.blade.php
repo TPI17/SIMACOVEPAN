@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SICOVIMA | Industrias MADA</title>
+	<title>SIMACOVEPAN | PANADERIA</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
@@ -71,8 +71,8 @@
 		</div>
 		<div class="pace-activity"></div>
 	</div>
-	<div id="wrapper">	
-		@include('Proyecto.Globales.Menu')	
+	<div id="wrapper">
+		@include('Proyecto.Globales.Menu')
 		<div id="page-wrapper" class="gray-bg" style="min-height: 1359px;">
 			@include('Proyecto.Globales.BarraSuperior')
 			@include('Proyecto.Globales.BarraNavegacion')
@@ -82,7 +82,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- Mainly scripts -->
 	<script src="js/jquery-2.1.1.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -455,7 +455,7 @@
 
 
     </script>
-	 
+
     <script>
     	$('#data_1 .input-group.date').datepicker({
                 todayBtn: "linked",

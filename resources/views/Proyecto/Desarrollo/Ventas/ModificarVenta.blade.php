@@ -42,7 +42,7 @@
                     </div>
                     <?php
 
-                        $responsable = SICOVIMA\Http\Controllers\VentasController::responsables($venta->id_Cliente);
+                        $responsable = SIMACOVEPAN\Http\Controllers\VentasController::responsables($venta->id_Cliente);
                         if ($responsable == "false") {
                             $responsable = "";
                         }else{
@@ -74,7 +74,7 @@
                     <div class="col-md-1">
                         <div class="input-group bootstrap-touchspin">
                              <a type="button" class="btn btn-outline btn-primary dim" data-toggle="modal" data-target="#myModalTabla">Agregar producto</a>
-                            
+
                         </div>
                     </div>
                     <br>
@@ -115,14 +115,14 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <?php 
+                    <?php
                         $total=0;
                         $indice=0;
-                        foreach ($venta->detalleVenta as $key => $detalle): 
-                        
+                        foreach ($venta->detalleVenta as $key => $detalle):
+
                     ?>
                     <?php
-                        $prod=SICOVIMA\producto::find($detalle->id_Producto);
+                        $prod=SIMACOVEPAN\producto::find($detalle->id_Producto);
                         $subtotal=($detalle->costoProd_DVen+$detalle->gananciaProd_DVen)*$detalle->cant_DVen;
                         $cadena='modificarDetalle('.$indice.');';
                         $icd="cd".$indice;
@@ -142,12 +142,12 @@
                             <input type="hidden" name='id[]' id='id{{$indice}}' value='{{$detalle->id}}'>
                             <a class='btn btn-danger btn-circle' type='button' id='Eliminar'><i class='fa fa-times'></i></a>
                             <a class='btn btn-success btn-circle' type='button' id='ModificarDetalle'><i class='fa fa-pencil-square-o' data-dismiss="modal" data-toggle="modal" data-target="#myModal6" onclick="{{$cadena}}"></i></a>
-                            </td> 
+                            </td>
                         </tr>
-                    <?php 
+                    <?php
                         $total=$total+$subtotal;
                         $indice++;
-                        endforeach 
+                        endforeach
                     ?>
                     </tbody>
                 </table>
@@ -203,7 +203,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                    </div>   
+                    </div>
                     <div class="col-md-3">
                         <label class="font-bold">              </label>
                         <div class="input-group bootstrap-touchspin">
@@ -295,7 +295,7 @@
 
                                             @foreach ( $productos as $prod )
                                             <?php
-                                            $inv = SICOVIMA\inventarioProductoTerminado::where('id_Producto',$prod->id)->get()->last();
+                                            $inv = SIMACOVEPAN\inventarioProductoTerminado::where('id_Producto',$prod->id)->get()->last();
                                             if ($inv->nuevaExistencia_IPT!=0) {
                                                 # code...
                                             ?>

@@ -41,20 +41,20 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <?php  
+                      <?php
                         foreach($ventas as $ven):
                         $cadena='agregarMotivo('.$ven->id.');';
                       ?>
                       <tr>
                         <td align="left"><font size="4" ></font>{{$ven->cliente->nombre_Cli}}</td>
-                        <?php   
+                        <?php
                           $dato = explode("-",(String)$ven->fecha_Ven);
                           $fecha = $dato[2]."/".$dato[1]."/".$dato[0];
                         ?>
                         <td align="rihgt" style = "width:15%"><font size="4" ></font>{{$fecha}}</td>
-                        <td align="rihgt" style = "width:20%"><font size="4" ></font>{{SICOVIMA\venta::numeroDocumento($ven->id)}}</td>
+                        <td align="rihgt" style = "width:20%"><font size="4" ></font>{{SIMACOVEPAN\venta::numeroDocumento($ven->id)}}</td>
                         <td align="rihgt" style = "width:10%"><font size="4" ></font><i class="fa fa-usd"></i>  {{$ven-> total_Ven}}</td>
-                        <td><?php 
+                        <td><?php
                         if ($ven->estado_Ven!=2):
                          ?>
                           Normal
@@ -72,7 +72,7 @@
                           <?php endif ?>
                         </td>
                       </tr>
-                    <?php  
+                    <?php
                       endforeach
                     ?>
                     </tbody>

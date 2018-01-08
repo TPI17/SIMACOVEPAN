@@ -7,7 +7,7 @@
                 <div class="col-lg-10">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <h5>Bienvenido a SICOVIMA</h5>
+                            <h5>Bienvenido a SIMACOVEPAN</h5>
                         </div>
                         <div class="ibox-content">
                             <div class="carousel slide" id="carousel1">

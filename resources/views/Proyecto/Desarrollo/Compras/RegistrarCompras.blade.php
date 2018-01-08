@@ -1,5 +1,5 @@
-<?php use SICOVIMA\materiaPrima;
-use SICOVIMA\proveedor; ?>
+<?php use SIMACOVEPAN\materiaPrima;
+use SIMACOVEPAN\proveedor; ?>
 @extends('layouts.MenuAdministrador')
 
 @section('content')

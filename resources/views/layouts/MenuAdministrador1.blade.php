@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SICOVIMA</title>
+    <title>SIMACOVEPAN</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -81,25 +81,25 @@
     <!-- NouSlider -->
     <script src="js/plugins/nouslider/jquery.nouislider.min.js"></script>
     <!-- Switchery -->
-    <script src="js/plugins/switchery/switchery.js"></script> 
+    <script src="js/plugins/switchery/switchery.js"></script>
     <!-- IonRangeSlider -->
     <script src="js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
     <!-- iCheck -->
-    <script src="js/plugins/iCheck/icheck.min.js"></script> 
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
     <!-- MENU -->
-    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script> 
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <!-- Color picker -->
-    <script src="js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script> 
+    <script src="js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
     <!-- Clock picker -->
     <script src="js/plugins/clockpicker/clockpicker.js"></script>
     <!-- Image cropper -->
-    <script src="js/plugins/cropper/cropper.min.js"></script> 
+    <script src="js/plugins/cropper/cropper.min.js"></script>
     <!-- Date range use moment.js same as full calendar plugin -->
-    <script src="js/plugins/fullcalendar/moment.min.js"></script> 
+    <script src="js/plugins/fullcalendar/moment.min.js"></script>
     <!-- Date range picker -->
-    <script src="js/plugins/daterangepicker/daterangepicker.js"></script> 
+    <script src="js/plugins/daterangepicker/daterangepicker.js"></script>
     <!-- Select2 -->
-    <script src="js/plugins/select2/select2.full.min.js"></script> 
+    <script src="js/plugins/select2/select2.full.min.js"></script>
     <!-- TouchSpin -->
     <script src="js/plugins/touchspin/jquery.bootstrap-touchspin.min.js"></script>
 

@@ -49,7 +49,7 @@
             </div>
             <div class="col-md-6">
                 <div class="ibox-content">
-                    <form class="m-t" role="form" action='sicovima/public/'>
+                    <form class="m-t" role="form" action='SIMACOVEPAN/public/'>
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="Username" required="">
                         </div>

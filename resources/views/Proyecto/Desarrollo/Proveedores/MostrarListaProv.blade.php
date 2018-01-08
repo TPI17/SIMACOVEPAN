@@ -47,7 +47,7 @@
 
                                 <td align="left"><font size="4" >{{$prov-> nombre_Prov}}</font></td>
                                 <?php
-                                  $telefonos = SICOVIMA\proveedor::numeroTelefono($prov->id);
+                                  $telefonos = SIMACOVEPAN\proveedor::numeroTelefono($prov->id);
                                 ?>
                                 <td align="rihgt"><font size="4" ><?php
                                   foreach ($telefonos as $telefono) {

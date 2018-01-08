@@ -192,13 +192,13 @@
                                             <th>Color</th>
                                             <th>Descripcion</th>
                                             <th>Precio</th>
-                                            <th>Accion</th>          
+                                            <th>Accion</th>
                                           </tr>
                                         </thead>
                                         <tbody>
                                             @foreach ( $productos as $prod )
                                                 <?php
-                                                $inv=SICOVIMA\inventarioProductoTerminado::where('id_Producto',$prod->id)->get()->last();
+                                                $inv=SIMACOVEPAN\inventarioProductoTerminado::where('id_Producto',$prod->id)->get()->last();
                                                 ?>
                                             <tr>
                                                 <td align="left" id="estilo"><font size="4" >{{$prod-> tipo_Prod}} {{$prod-> estilo_Prod}}</font></td>

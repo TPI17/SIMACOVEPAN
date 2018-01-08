@@ -1,4 +1,4 @@
-<?php use SICOVIMA\departamento;
+<?php use SIMACOVEPAN\departamento;
  ?>
 @extends('layouts.MenuAdministrador')
 
@@ -61,7 +61,7 @@
                                     <div class="form-group"><label class="col-lg-3 control-label">Tipo de Mercadería</label>
 
                                         <div class="col-lg-5">
-                                            {!! Form::select('tipoMercaderia_Prov',\SICOVIMA\tipoMercaderia::arrayTipoMercaderia(),null,['id' => 'tipoMercaderia_Prov','class' => 'form-control m-b','style' => 'width:200px','tabindex' => '2']) !!}
+                                            {!! Form::select('tipoMercaderia_Prov',\SIMACOVEPAN\tipoMercaderia::arrayTipoMercaderia(),null,['id' => 'tipoMercaderia_Prov','class' => 'form-control m-b','style' => 'width:200px','tabindex' => '2']) !!}
                                         </div>
                                         <div class="col-lg-4">
                                           <input type="text" class="form-control" id="otroMercaderia" style="Display:none" name="otroMer" >
